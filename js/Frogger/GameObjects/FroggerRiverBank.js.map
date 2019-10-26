@@ -1,0 +1,1 @@
+{"version":3,"file":"FroggerRiverBank.js","sourceRoot":"","sources":["../../../Frogger/GameObjects/FroggerRiverBank.ts"],"names":[],"mappings":"AAAA,MAAM,gBAAiB,SAAQ,UAAU;IACxC;QACC,KAAK,CAAC;YACL,KAAK,EAAE,CAAC;YACR,KAAK,EAAE,WAAW;YAClB,cAAc,EAAE,SAAS,CAAC,QAAQ;SAClC,CAAC,CAAC;QACH,IAAI,CAAC,SAAS,CAAC,IAAI,GAAG,IAAI,OAAO,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC;IAC1C,CAAC;CACD"}

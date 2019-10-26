@@ -1,0 +1,1 @@
+{"version":3,"file":"FroggerMainLevel.js","sourceRoot":"","sources":["../../../Frogger/Levels/FroggerMainLevel.ts"],"names":[],"mappings":"AAAA,MAAM,gBAAiB,SAAQ,KAAK;IACnC;QACC,KAAK,CAAc;YAClB,uBAAuB,EAAE,0BAA0B;YACnD,SAAS,EAAE;gBACV,+BAA+B;aAC/B;YACD,4GAA4G;YAC5G,QAAQ,EAAE,GAAG;SACb,CAAC,CAAC;IACJ,CAAC;CACD"}

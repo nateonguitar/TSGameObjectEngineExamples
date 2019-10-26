@@ -1,0 +1,46 @@
+<html>
+
+<head>
+	<script src="../lib/dist/main.js"></script>
+	<!-- my own code imports -->
+	<script src="../js/Zelda/Levels/ZeldaOverworldController.js"></script>
+	<script src="../js/Zelda/Levels/ZeldaOverworldLevel.js"></script>
+	<script src="../js/Zelda/GameObjects/ZeldaOverworldBackground.js"></script>
+	<script src="../js/Zelda/GameObjects/ZeldaPlayer.js"></script>
+	<script src="../js/Zelda/GameObjects/ZeldaSoldier.js"></script>
+	<script src="../js/Zelda/GameObjects/ZeldaSoldierGreen.js"></script>
+	<script src="../js/Zelda/GameObjects/ZeldaSoldierBlue.js"></script>
+
+	<link rel="stylesheet" href="../styles.css">
+
+	<script type="text/JavaScript">
+		function runGame() {
+			new GameLauncher({
+				parentElementID: "game-holder",
+				screenWidth: 800,
+				screenHeight: 750,
+				imageAntiAliasing: false,
+				layers: 4,
+				showDebug: true,
+				backgroundColor: "#001100",
+				border: "1px solid #008800",
+				allowToggleDebug: true,
+				drawColliders: true,
+				drawTransforms: true,
+				drawCenteredCross: true,
+				levelClasses: {
+					'ZeldaOverworld': ZeldaOverworldLevel,
+				},
+				initialLevel: 'ZeldaOverworld'
+			});
+		}
+		window.addEventListener('load', runGame, false);
+	</script>
+</head>
+
+<body>
+	<h1 class="title">TypeScript Game Engine - Zelda</h1>
+	<p class="back-button"><a href="../index.html">Back</a></p>
+	<div id="game-holder"></div>
+</body>
+</html>

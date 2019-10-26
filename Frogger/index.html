@@ -1,0 +1,66 @@
+<html>
+
+<head>
+	<!-- library import -->
+	<!-- YOU MUST IMPORT THESE-->
+	<script src="../js/lib/Camera.js"></script>
+	<script src="../js/lib/Canvas.js"></script>
+	<script src="../js/lib/Collider.js"></script>
+	<script src="../js/lib/RectCollider.js"></script>
+	<script src="../js/lib/Debug.js"></script>
+	<script src="../js/lib/GameLauncher.js"></script>
+	<script src="../js/lib/GameManager.js"></script>
+	<script src="../js/lib/GameObject.js"></script>
+	<script src="../js/lib/HudGameObject.js"></script>
+	<script src="../js/lib/Level.js"></script>
+	<script src="../js/lib/SpritesheetAnimation.js"></script>
+	<script src="../js/lib/SpritesheetAnimationSet.js"></script>
+	<script src="../js/lib/StressTestSquare.js"></script>
+	<script src="../js/lib/Time.js"></script>
+	<script src="../js/lib/Transform.js"></script>
+	<script src="../js/lib/Utils.js"></script>
+	<script src="../js/lib/Vector2.js"></script>
+	<script src="../js/lib/VectorN.js"></script>
+	<script src="../js/lib/Input.js"></script>
+	<!-- End required import-->
+
+	<!-- my own code imports -->
+	<script src="../js/Frogger/Levels/FroggerMainLevel.js"></script>
+	<script src="../js/Frogger/Levels/FroggerMainLevelController.js"></script>
+	<script src="../js/Frogger/GameObjects/FroggerPlayer.js"></script>
+	<script src="../js/Frogger/GameObjects/FroggerRiver.js"></script>
+	<script src="../js/Frogger/GameObjects/FroggerRiverBank.js"></script>
+	<script src="../js/Frogger/GameObjects/FroggerLandingObject.js"></script>
+	<script src="../js/Frogger/GameObjects/FroggerLogSmall.js"></script>
+
+
+	<link rel="stylesheet" href="../styles.css">
+
+	<script type="text/JavaScript">
+
+		function runGame() {
+			new GameLauncher({
+				parentElementID: "game-holder",
+				screenWidth: 1000,
+				screenHeight: 800,
+				imageAntiAliasing: false,
+				layers: 5,
+				showDebug: true,
+				backgroundColor: "#000011",
+				border: "1px solid #000088",
+				allowToggleDebug: true,
+				levelClasses: {
+					'FroggerMainLevel': FroggerMainLevel,
+				},
+			});
+		}
+		window.addEventListener('load', runGame, false);
+	</script>
+</head>
+
+<body>
+	<h1 class="title">TypeScript Game Engine - Frogger</h1>
+	<p class="back-button"><a href="../index.html">Back</a></p>
+	<div id="game-holder"></div>
+</body>
+</html>

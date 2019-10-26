@@ -1,0 +1,93 @@
+<html>
+
+<head>
+	<!-- library import -->
+	<!-- YOU MUST IMPORT THESE-->
+	<script src="../js/lib/Camera.js"></script>
+	<script src="../js/lib/Canvas.js"></script>
+	<script src="../js/lib/Collider.js"></script>
+	<script src="../js/lib/RectCollider.js"></script>
+	<script src="../js/lib/Debug.js"></script>
+	<script src="../js/lib/GameLauncher.js"></script>
+	<script src="../js/lib/GameManager.js"></script>
+	<script src="../js/lib/GameObject.js"></script>
+	<script src="../js/lib/HudGameObject.js"></script>
+	<script src="../js/lib/Level.js"></script>
+	<script src="../js/lib/SpritesheetAnimation.js"></script>
+	<script src="../js/lib/SpritesheetAnimationSet.js"></script>
+	<script src="../js/lib/StressTestSquare.js"></script>
+	<script src="../js/lib/Time.js"></script>
+	<script src="../js/lib/Transform.js"></script>
+	<script src="../js/lib/Utils.js"></script>
+	<script src="../js/lib/Vector2.js"></script>
+	<script src="../js/lib/VectorN.js"></script>
+	<script src="../js/lib/Input.js"></script>
+	<!-- End required import-->
+
+
+	<!-- levels -->
+	<script src="../js/Mario/Levels/MarioPlayableLevel.js"></script>
+    <script src="../js/Mario/Levels/MarioLevelController.js"></script>
+    <script src="../js/Mario/Levels/MarioLevel01.js"></script>
+	<script src="../js/Mario/Levels/MarioLevel01Controller.js"></script>
+
+	<!-- tiles -->
+	<script src="../js/Mario/GameObjects/Tiles/MarioGameTile.js"></script>
+	<script src="../js/Mario/GameObjects/Tiles/MarioGameTileBricksBrown.js"></script>
+	<script src="../js/Mario/GameObjects/Tiles/MarioGameTileBricksTopBrown.js"></script>
+	<script src="../js/Mario/GameObjects/Tiles/MarioGameTileCloudBottomLeft.js"></script>
+	<script src="../js/Mario/GameObjects/Tiles/MarioGameTileCloudBottom.js"></script>
+	<script src="../js/Mario/GameObjects/Tiles/MarioGameTileCloudBottomRight.js"></script>
+	<script src="../js/Mario/GameObjects/Tiles/MarioGameTileCloudTopLeft.js"></script>
+	<script src="../js/Mario/GameObjects/Tiles/MarioGameTileCloudTop.js"></script>
+	<script src="../js/Mario/GameObjects/Tiles/MarioGameTileCloudTopRight.js"></script>
+	<script src="../js/Mario/GameObjects/Tiles/MarioGameTileHillCenterGreen.js"></script>
+	<script src="../js/Mario/GameObjects/Tiles/MarioGameTileHillCenterSpotsLeftGreen.js"></script>
+	<script src="../js/Mario/GameObjects/Tiles/MarioGameTileHillCenterSpotsRightGreen.js"></script>
+	<script src="../js/Mario/GameObjects/Tiles/MarioGameTileHillLeftGreen.js"></script>
+	<script src="../js/Mario/GameObjects/Tiles/MarioGameTileHillRightGreen.js"></script>
+	<script src="../js/Mario/GameObjects/Tiles/MarioGameTileHillTopGreen.js"></script>
+	<script src="../js/Mario/GameObjects/Tiles/MarioGameTileQuestionMark.js"></script>
+	<script src="../js/Mario/GameObjects/Tiles/MarioGameTileRocksBrown.js"></script>
+	<script src="../js/Mario/GameObjects/Tiles/MarioGameTileTubeBottomLeft.js"></script>
+	<script src="../js/Mario/GameObjects/Tiles/MarioGameTileTubeBottomRight.js"></script>
+	<script src="../js/Mario/GameObjects/Tiles/MarioGameTileTubeTopLeft.js"></script>
+	<script src="../js/Mario/GameObjects/Tiles/MarioGameTileTubeTopRight.js"></script>
+
+	<!-- other -->
+	<script src="../js/Mario/GameObjects/MarioPlayer.js"></script>
+	<script src="../js/Mario/GameObjects/BackBarrier.js"></script>
+	<script src="../js/Mario/MarioData.js"></script>
+
+
+	<link rel="stylesheet" href="../styles.css">
+
+	<script type="text/JavaScript">
+
+		function runGame() {
+			new GameLauncher({
+				parentElementID: "game-holder",
+				screenWidth: 800,
+				screenHeight: 600,
+				imageAntiAliasing: false,
+				layers: 5,
+				showDebug: true,
+				backgroundColor: "#000011",
+				border: "1px solid #000088",
+				allowToggleDebug: true,
+				font: "Courier New",
+				levelClasses: {
+					'MarioLevel01': MarioLevel01,
+				},
+			});
+		}
+		window.addEventListener('load', runGame, false);
+	</script>
+</head>
+
+<body>
+	<h1 class="title">TypeScript Game Engine - Mario</h1>
+	<p class="back-button"><a href="../index.html">Back</a></p>
+	<div id="game-holder"></div>
+</body>
+</html>
