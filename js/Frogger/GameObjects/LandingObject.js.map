@@ -1,1 +1,0 @@
-{"version":3,"file":"LandingObject.js","sourceRoot":"","sources":["../../../Frogger/GameObjects/LandingObject.ts"],"names":[],"mappings":";;;;;;;;;;;;;;;AAAA,gDAAqD;AAErD;IAAmC,iCAAU;IAC5C,uBAAY,IAAY;QAAxB,YACC,kBAAM,EAAC,KAAK,EAAE,CAAC,EAAE,IAAI,EAAE,IAAI,EAAC,CAAC,SAE7B;QADA,KAAI,CAAC,kBAAkB,EAAE,CAAC;;IAC3B,CAAC;IACF,oBAAC;AAAD,CAAC,AALD,CAAmC,iBAAU,GAK5C;AALY,sCAAa"}
