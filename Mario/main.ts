@@ -1,8 +1,8 @@
-import { GameLauncher } from "game-object-engine/dist";
+import { GameLauncher, GameOptions } from "game-object-engine/dist";
 import { Level01 } from "./Levels";
 
 export function marioGameLauncher() {
-    new GameLauncher({
+    new GameLauncher(<GameOptions>{
         parentElementID: "game-holder",
         screenWidth: 800,
         screenHeight: 600,

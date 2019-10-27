@@ -1,9 +1,9 @@
-import { GameLauncher } from "game-object-engine/dist";
+import { GameLauncher, GameOptions } from "game-object-engine/dist";
 import { MainLevel } from "./Levels";
 
 export function froggerGameLauncher() {
-    new GameLauncher({
-        parentElementID: "game-holder",
+    new GameLauncher(<GameOptions>{
+        parentElementID: 'game-holder',
         screenWidth: 1000,
         screenHeight: 800,
         imageAntiAliasing: false,
@@ -15,5 +15,6 @@ export function froggerGameLauncher() {
         levelClasses: {
             'MainLevel': MainLevel,
         },
+        initialLevel: 'MainLevel'
     });
 }

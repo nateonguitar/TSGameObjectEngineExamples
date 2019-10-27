@@ -1,8 +1,8 @@
-import { GameLauncher } from "game-object-engine/dist";
+import { GameLauncher, GameOptions } from "game-object-engine/dist";
 import { TetrisLevel } from "./TetrisLevel";
 
 export function tetrisGameLauncher() {
-    new GameLauncher({
+    new GameLauncher(<GameOptions>{
         parentElementID: "game-holder",
         screenWidth: 800,
         screenHeight: 600,

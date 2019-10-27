@@ -1,8 +1,8 @@
-import { GameLauncher } from "game-object-engine/dist";
+import { GameLauncher, GameOptions } from "game-object-engine/dist";
 import { OverworldLevel } from "./Levels/OverworldLevel";
 
 export function zeldaGameLauncher() {
-    new GameLauncher({
+    new GameLauncher(<GameOptions>{
         parentElementID: "game-holder",
         screenWidth: 800,
         screenHeight: 750,
@@ -12,9 +12,6 @@ export function zeldaGameLauncher() {
         backgroundColor: "#001100",
         border: "1px solid #008800",
         allowToggleDebug: true,
-        drawColliders: true,
-        drawTransforms: true,
-        drawCenteredCross: true,
         levelClasses: {
             'Overworld': OverworldLevel,
         },
