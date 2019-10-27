@@ -1,4 +1,6 @@
-class Piece extends GameObject {
+import { GameObject, Canvas } from "game-object-engine/dist";
+
+export class Piece extends GameObject {
 
 	// GameObject overrides
 	public arrangement: boolean[][] = [];

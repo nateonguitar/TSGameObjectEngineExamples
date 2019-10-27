@@ -1,11 +1,15 @@
-class BackBarrier extends GameObject {
+import { GameObject, RectCollider, Vector2, GameManager } from "game-object-engine/dist";
+import { Tile } from "./Tiles";
+import { LevelController } from "../Levels";
+
+export class BackBarrier extends GameObject {
 
 	constructor() {
 		super();
 		this.collider = new RectCollider({
 			position: new Vector2(-8.35, 0),
 			size: new Vector2(1, 20),
-			allowPassThroughWhitelist: [MarioGameTile]
+			allowPassThroughWhitelist: [Tile]
 		});
 
 		this.init();
@@ -18,7 +22,7 @@ class BackBarrier extends GameObject {
 	}
 
 	public update(): void {
-		let player = (<MarioLevelController> GameManager.currentLevel.managingGameObject).player;
+		let player = (<LevelController> GameManager.currentLevel.managingGameObject).player;
 		// follow player any time he is farther than the center of the screen
 		if (player.transform.position.x > this.transform.position.x) {
 			this.transform.position.x = player.transform.position.x;

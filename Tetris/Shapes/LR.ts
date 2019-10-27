@@ -1,5 +1,7 @@
+import { Piece } from "./Piece";
+
 // Piece extends GameObject
-class LR extends Piece {
+export class LR extends Piece {
 	constructor() {
 		super();
 		this.outerColor = '#b342f4';

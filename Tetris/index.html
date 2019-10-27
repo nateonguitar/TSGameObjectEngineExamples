@@ -1,62 +1,11 @@
 <html>
-
 <head>
-	<!-- library import -->
-	<!-- YOU MUST IMPORT THESE-->
-	<script src="../js/lib/Camera.js"></script>
-	<script src="../js/lib/Canvas.js"></script>
-	<script src="../js/lib/Collider.js"></script>
-	<script src="../js/lib/RectCollider.js"></script>
-	<script src="../js/lib/Debug.js"></script>
-	<script src="../js/lib/GameLauncher.js"></script>
-	<script src="../js/lib/GameManager.js"></script>
-	<script src="../js/lib/GameObject.js"></script>
-	<script src="../js/lib/HudGameObject.js"></script>
-	<script src="../js/lib/Level.js"></script>
-	<script src="../js/lib/SpritesheetAnimation.js"></script>
-	<script src="../js/lib/SpritesheetAnimationSet.js"></script>
-	<script src="../js/lib/StressTestSquare.js"></script>
-	<script src="../js/lib/Time.js"></script>
-	<script src="../js/lib/Transform.js"></script>
-	<script src="../js/lib/Utils.js"></script>
-	<script src="../js/lib/Vector2.js"></script>
-	<script src="../js/lib/VectorN.js"></script>
-	<script src="../js/lib/Input.js"></script>
-	<!-- End required import-->
-
-	<!-- my own code imports -->
-	<script src="../js/Tetris/Shapes/Piece.js"></script>
-	<script src="../js/Tetris/Shapes/Cube.js"></script>
-	<script src="../js/Tetris/Shapes/Line.js"></script>
-	<script src="../js/Tetris/Shapes/LL.js"></script>
-	<script src="../js/Tetris/Shapes/LR.js"></script>
-	<script src="../js/Tetris/Grid.js"></script>
-	<script src="../js/Tetris/TetrisLevel.js"></script>
-	<script src="../js/Tetris/TetrisController.js"></script>
-
-
 	<link rel="stylesheet" href="../styles.css">
-
+	
 	<script type="text/JavaScript">
-
-		function runGame() {
-			new GameLauncher({
-				parentElementID: "game-holder",
-				screenWidth: 800,
-				screenHeight: 600,
-				imageAntiAliasing: false,
-				layers: 5,
-				showDebug: true,
-				backgroundColor: "#330000",
-				border: "1px solid red",
-				allowToggleDebug: true,
-				levelClasses: {
-					'Tetris': TetrisLevel
-				},
-			});
-		}
-		window.addEventListener('load', runGame, false);
+		var gameType = 'tetris';
 	</script>
+	<script src="../dist/bundle.js"></script>
 </head>
 
 <body>

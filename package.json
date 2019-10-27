@@ -1,0 +1,36 @@
+{
+  "name": "game-object-engine-examples",
+  "version": "1.0.0",
+  "description": "This is a typescript project.",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "webpack"
+  },
+  "dependencies": {
+    "game-object-engine": "file:../TS2DGameEngine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nateonguitar/TSGameObjectEngineExamples.git"
+  },
+  "keywords": [
+    "2d",
+    "game",
+    "engine",
+    "typescript"
+  ],
+  "author": "Nate Brooks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nateonguitar/TSGameObjectEngineExamples.git/issues"
+  },
+  "homepage": "https://github.com/nateonguitar/TSGameObjectEngineExamples.git#readme",
+  "devDependencies": {
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.6.4",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
+  }
+}

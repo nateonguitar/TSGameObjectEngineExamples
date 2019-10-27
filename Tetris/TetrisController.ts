@@ -1,4 +1,12 @@
-class TetrisController extends GameObject {
+import { GameObject, Input, Vector2, GameManager, Keys } from "game-object-engine/dist";
+import { Cube } from "./Shapes/Cube";
+import { Line } from "./Shapes/Line";
+import { LL } from "./Shapes/LL";
+import { LR } from "./Shapes/LR";
+import { Piece } from "./Shapes/Piece";
+import { Grid } from "./Grid";
+
+export class TetrisController extends GameObject {
 	private pieceTypes = [
 		Cube,
 		Line,

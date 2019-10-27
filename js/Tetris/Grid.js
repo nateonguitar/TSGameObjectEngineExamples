@@ -1,31 +1,51 @@
-class Grid extends GameObject {
-    constructor() {
-        super();
+"use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+var dist_1 = require("game-object-engine/dist");
+var Grid = /** @class */ (function (_super) {
+    __extends(Grid, _super);
+    function Grid() {
+        var _this = _super.call(this) || this;
         // override
-        this.layer = 0;
-        this.gridPieces = [];
-        let t = this.transform;
-        t.size = new Vector2(11, 18);
-        GameManager.camera.follow(this);
-        for (let i = 0; i < this.transform.size.y; i++) {
-            this.gridPieces.push([]);
-            for (let j = 0; j < this.transform.size.x; j++) {
-                let gridPiece = new GameObject({
+        _this.layer = 0;
+        _this.gridPieces = [];
+        var t = _this.transform;
+        t.size = new dist_1.Vector2(11, 18);
+        dist_1.GameManager.camera.follow(_this);
+        for (var i = 0; i < _this.transform.size.y; i++) {
+            _this.gridPieces.push([]);
+            for (var j = 0; j < _this.transform.size.x; j++) {
+                var gridPiece = new dist_1.GameObject({
                     layer: 1,
                     shape: 'rectangle',
                     shapeStrokeStyle: "#aaaaaa",
                     shapeFillStyle: "#000000"
                 });
-                gridPiece.transform.position = new Vector2(j - t.size.x / 2, i - t.size.y / 2);
-                this.gridPieces[i].push(gridPiece);
+                gridPiece.transform.position = new dist_1.Vector2(j - t.size.x / 2, i - t.size.y / 2);
+                _this.gridPieces[i].push(gridPiece);
             }
         }
+        return _this;
     }
     // override
-    update() {
-    }
+    Grid.prototype.update = function () {
+    };
     // override
-    draw() {
-    }
-}
+    Grid.prototype.draw = function () {
+    };
+    return Grid;
+}(dist_1.GameObject));
+exports.Grid = Grid;
 //# sourceMappingURL=Grid.js.map

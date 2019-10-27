@@ -1,5 +1,7 @@
+import { Piece } from "./Piece";
+
 // Piece extends GameObject
-class Line extends Piece {
+export class Line extends Piece {
 	constructor() {
 		super();
 		this.outerColor = '#0000FF';

@@ -1,4 +1,6 @@
-class Grid extends GameObject {
+import { GameObject, Vector2, GameManager } from "game-object-engine/dist";
+
+export class Grid extends GameObject {
 	// override
 	public layer: number = 0;
 	private gridPieces: GameObject[][] = [];
