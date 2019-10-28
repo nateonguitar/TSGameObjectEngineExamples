@@ -1,6 +1,4 @@
-import { Level, Vector2 } from "game-object-engine/dist";
-
-import { LevelParams } from "game-object-engine/dist/Level";
+import { Level, LevelParams, Vector2 } from "game-object-engine/dist";
 
 export interface PlayableLevelParams {
 	managingGameObjectClass: Function,

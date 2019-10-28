@@ -1,5 +1,5 @@
-import { OverworldController } from "./OverworldController";
 import { GameManager, Vector2, Level, LevelParams } from "game-object-engine/dist";
+import { OverworldController } from "./OverworldController";
 
 
 export class OverworldLevel extends Level {

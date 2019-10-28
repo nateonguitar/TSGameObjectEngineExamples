@@ -1,6 +1,4 @@
-import { Level, GameManager } from "game-object-engine/dist";
-
-import { LevelParams } from "game-object-engine/dist/Level";
+import { Level, LevelParams, GameManager } from "game-object-engine/dist";
 
 import { TetrisController } from "./TetrisController";
 
